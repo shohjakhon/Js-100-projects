@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.title{
+    font-size: 3rem;
+    color: rgb(12, 34, 58);
+    letter-spacing: 0.3rem;
+    text-transform: capitalize;
+    padding: 0.3rem 1rem;
+}
+
+.timer-display{
+    font-size: 5rem;
+    color: rgb(12, 34, 58);
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    padding: 2rem 1rem;
+}
+
+.btn-box{
+    margin-top: 2rem;
+}
+
+.btn{
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:last-child{
+    margin-right: 0;
+}
+
+.start{
+    background-color: rgb(39,174,96);
+}
+.stop{
+    background-color: rgb(192,57,43);
+}
+.reset{
+    background-color: rgb(119, 115, 115);
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.btn-input{
+    margin-top: 1rem;
+    background: yellowgreen;
+}
+
+.timer-change{
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.title-input{
+    background: rgb(151, 167, 235);
+    color: white;
+    padding: 0.2rem 1rem;
+    position: absolute;
+    top:-1.5rem;
+    right: -12.5rem;
+    border-radius: 1rem 1rem 1rem 0;
+    display: none;
+}
+
+.title-change:has(.timer-change):focus{
+    background: red;
+}
+
+.timer-change:focus + .title-input{
+    display: block;
+}

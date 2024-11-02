@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <title>Generate Password</title>
+</head>
+
+<body>
+
+    <div class="password-box">
+        <div class="display-box">
+            <input type="text" class="display" id="display" readonly>
+            <i class="fa-thin fa-copy" id="copy" title="Copy text"></i>
+        </div>
+        <button class="btn" id="btn">Generate Password</button>
+        <div class="range-box items">
+            <input type="range" class="range" name="range" id="range" min="1" max="100">
+            <p id="range-display">1</p>
+        </div>
+        <div class="num-box items">
+            <input type="checkbox" name="num" id="num" checked>
+            <label for="num">
+                Numbers [1 to 0]
+            </label>
+        </div>
+        <div class="alphabet-box items">
+            <input type="checkbox" name="alphabet" id="alphabet">
+            <label for="alphabet">Strings [a....b]</label>
+        </div>
+        <div class="big-alphabet-box items">
+            <input type="checkbox" name="big-alphabet" id="big-alphabet">
+            <label for="big-alphabet">Strings [A....B]</label>
+        </div>
+        <div class="sign-box items">
+            <input type="checkbox" name="sign" id="sign">
+            <label for="sign">Sign [./,!@#$%^&*()]</label>
+        </div>
+
+        <div class="succes-modal modal hide">
+            <!-- <div class="head-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </div> -->
+            <div class="body-modal">
+                Copied the text
+            </div>
+        </div>
+
+        <div class="ignor-modal modal hide">
+            <div class="body-modal">
+                Text is not available
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

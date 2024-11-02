@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow {
+  min-width: 7%;
+  font-size: 2rem;
+  color: rgb(39, 39, 39);
+  background: #9494943f;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.arrow.arrow-right {
+  order: 1;
+}
+
+.content {
+  display: flex;
+  padding: 3rem;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.content-img {
+  width: 70%;
+  height: 400px;
+  overflow: hidden;
+  background: red;
+}
+
+.content-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content-title {
+  text-align: center;
+}
+
+.show {
+  display: flex;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.showAnimationLeft {
+  animation-name: showAnimationLeft;
+}
+.showAnimationRight {
+  animation-name: showAnimationRight;
+}
+.hideAnimationLeft {
+  animation-name: hideAnimationLeft;
+}
+.hideAnimationRight {
+  animation-name: showAnimationRight;
+}
+
+@keyframes showAnimationRight {
+  0% {
+    transform: translate(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes showAnimationLeft {
+  0% {
+    transform: translate(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes hideAnimationLeft {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(100%);
+    opacity: 1;
+  }
+}
+@keyframes hideAnimationLeft {
+  0% {
+    transform: translate(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-100%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1.title{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.add-task{
+    margin: 1rem;
+}
+
+.add-task > input{
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 0.2rem;
+    outline: none;
+}
+.add-task > button{
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    /* border: 1px solid black; */
+    padding: 0 1rem;
+    background: none;
+}
+
+.list > li{
+    background: rgb(3, 211, 248);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px -1px black;
+    margin-bottom: 1rem;
+    min-width: 500px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.end{
+    text-align: end;
+}
+
+.list > li i{
+    margin-left: 1rem;
+    cursor: pointer;
+
+}

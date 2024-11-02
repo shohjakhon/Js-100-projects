@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex; 
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.parent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 2px black;
+    padding: 3rem;
+    border-radius: 50px;
+}
+
+input{
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+button{
+    font-size: 1.5rem;
+    background-color: azure;
+    border: none;
+    box-shadow: 0 0 5px 0 gray;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+h1 , h2{
+    font-size: 1.5rem;
+}

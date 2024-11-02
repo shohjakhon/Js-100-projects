@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.parent{
+    width: 50%;
+    box-shadow:  0 0 1rem .2rem rgb(78, 78, 78);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+label{
+   cursor: pointer;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem 0.2rem rgba(94, 93, 93, 0.829);
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+input{
+    display: none;
+}
+
+h1{
+    text-align: center;
+}

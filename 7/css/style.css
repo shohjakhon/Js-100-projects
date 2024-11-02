@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css2?family=B612+Mono:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+    font-family: "B612 Mono", monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-box {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    /* border: 1px solid black; */
+    /* border-radius: 1rem; */
+}
+
+input.display {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-family: inherit;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    outline: none;
+    border: none;
+}
+
+.display-box > i{
+    font-size: 1.2rem;
+}
+.display-box > i:hover{
+    cursor: copy;
+}
+
+
+.btn{
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.items {
+    margin-bottom: 1rem;
+}
+
+.range{
+    width: 20rem;
+}
+
+.range-box > p{
+    margin: 0.5rem 0 1rem 0;
+    text-align: center;
+}
+
+.modal{
+    /* box-shadow: 0 0 5px 3px gray; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.head-modal{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.hide{
+    display: none;
+}

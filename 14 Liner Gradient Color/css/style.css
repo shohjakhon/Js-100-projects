@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css2?family=Scheherazade:wght@100;200;300;400;500;600;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Scheherazade", serif;
+}
+
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box #btn {
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  font-family: inherit;
+  background: linear-gradient(
+    190deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: monospace;
+  margin: 0.5rem;
+  cursor: copy;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+}
+
+.author a {
+  font-size: 2.2rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.notification {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-item {
+  font-size: 2rem;
+  /* border: 1px solid rgb(124, 124, 124); */
+  box-shadow: 0 0 5px 1px #ccc;
+  border-radius: 10px;
+  padding: 0.3rem 2rem;
+  margin-top: 1rem;
+}

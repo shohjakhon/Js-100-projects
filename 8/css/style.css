@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css2?family=Itim&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Itim', handwriting;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    width: 60%;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.box > h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+} 
+
+.convert-input::-webkit-outer-spin-button,
+.convert-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.convert-input{
+    padding: 0.3rem 1.2rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.change-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.change-box .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.item > span{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px black;
+    letter-spacing: 1px;
+}
+
+.item > select{
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+
+.convert-btn{
+    /* padding: 0rem 3rem; */
+    width: 40%;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    background-color: deeppink;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+.convert-text{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    word-spacing: 1rem;
+}
+
+
