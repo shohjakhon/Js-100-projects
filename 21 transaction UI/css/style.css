@@ -57,6 +57,22 @@ header.header {
   letter-spacing: 2px;
 }
 
+.transaction-container{
+  z-index: 111;
+  position: absolute;
+  background: rgba(112, 112, 112, 0.849);
+  width: 98vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  
+}
+
+.transaction-modal{
+  width: 50%;
+  margin: auto;
+}
+
 .cards {
   gap: 2rem;
 }
@@ -69,7 +85,10 @@ header.header {
   border-radius: 6px;
 }
 
-.card-item:nth-of-type(3) {
+.card-minusAll{
+  background: var(--minus-money);
+}
+.card-plussAll{
   background: var(--remaining-money_bg);
 }
 
@@ -187,6 +206,8 @@ section.section {
   background: var(--remaining-money_bg);
   color: var(--text-color_white);
 }
+
+
 
 @media only screen and (max-width: 992px) {
   .card-item {
